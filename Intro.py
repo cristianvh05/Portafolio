@@ -1,20 +1,18 @@
 import streamlit as st
 from PIL import Image
-st.title("Aplicaciones de Inteligencia Artificial.")
+st.title("Aplicaciones desarrolladas en Computación Avanzada.")
 
 with st.sidebar:
-  st.subheader("Aplicaciones con Inteligencia Artificial.")
+  st.subheader("Aplicaciones desarrolladas en Computación Avanzada.")
   parrafo = (
-    "La inteligencia artificial permite mejorar la toma de decisiones con el uso de datos, "
-    "automatizar tareas rutinarias y proporcionar análisis avanzados en tiempo real, lo que "
-    "resulta en una mayor eficiencia y precisión en diversos campos."
+    "Este portafolio reúne las aplicaciones desarrolladas y puestas a prueba durante la asignatura de Programación Avanzada. Cada proyecto explora el potencial de la inteligencia artificial, el procesamiento de datos y la automatización para construir soluciones funcionales mediante código moderno."
   )
   st.write(parrafo)
 
 url_ia="https://sites.google.com/view/aplicacionesdeia/inicio"
-st.subheader("En el siguiente enlace puedes encontrar páginas y ejercicios prácticos")
+st.subheader("En los siguientes enlaces puedes encontrar páginas y ejercicios prácticos")
 st.write(f"Enlace para páginas y ejercicios: [Enlace]({url_ia})")
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
  
@@ -84,4 +82,24 @@ with col3:
  url = "https://vision2-gpt4o.streamlit.app/"
  st.write(f"Vision: [Enlace]({url})")
 
+with col4: 
+ st.subheader("Generación en Contexto")
+ image = Image.open('Chat_pdf.png')
+ st.image(image, width=190)
+ st.write("En la siguiente veremos una aplicación que usa RAG a partir de un documento (PDF).") 
+ url = "https://chatpdf-cc.streamlit.app/"
+ st.write(f"RAG: [Enlace]({url})")
 
+ st.subheader("Análisis de Imagen")
+ image = Image.open('OIG4.jpg')
+ st.image(image, width=200)
+ st.write("En la siguiente enlace veremos la capacidad de análisis en Imágenes.") 
+ url = "https://vision2-gpt4o.streamlit.app/"
+ st.write(f"Vision: [Enlace]({url})")
+ 
+ st.subheader("Sistema Ciberfísico")
+ image = Image.open('OIG6.jpg')
+ st.image(image, width=200)
+ st.write("En la siguiente enlace veremos la capacidad de interacción con el mundo físico.") 
+ url = "https://vision2-gpt4o.streamlit.app/"
+ st.write(f"Vision: [Enlace]({url})")
