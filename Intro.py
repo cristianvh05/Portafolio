@@ -17,7 +17,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
  
  st.subheader("Clasificación y Análisis de Frutas")
- st.image("frutas_app.png", width=200)  # Recuerda guardar tu imagen con este nombre
+ st.image("frutas_app.webp", width=200)
  st.write(
     "Aplicación interactiva para evaluar y comparar frutas según sus atributos (peso, diámetro y dulzor). "
     "Permite ingresar nuevos especímenes y calcular métricas de distancia para determinar su similitud con otras frutas."
