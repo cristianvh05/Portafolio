@@ -25,19 +25,25 @@ with col1:
  url = "https://frutasappclase.streamlit.app/"
  st.write(f"Acceder a la app: [Enlace]({url})")
 
- st.subheader("Reconocimiento de Objetos")
- image = Image.open('txt_to_audio.png')
- st.image(image, width=200)
- st.write("En la siguiente enlace veremos como se detectan objetos en Imágenes.") 
- url = "https://yolov5cmc.streamlit.app/"
- st.write(f"YOLO: [Enlace]({url})")
+ st.subheader("Detección de Anomalías y Complejidad")
+ st.image("anomalias_complejidad.png", width=200)
+ st.write(
+    "Herramienta orientada al procesamiento eficiente de datos masivos e IA de alto rendimiento. "
+    "Analiza la lógica de negocio, evalúa la complejidad computacional (Big-O) y aplica vectorización "
+    "para optimizar la ejecución en hardware."
+ )
+ url = "https://detectoranomalias-my9xdojez9nixnmcayj7r5.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
 
- st.subheader("Entrenando Modelos")
- image = Image.open('OIG5.jpg')
- st.image(image, width=200)
- st.write("En la siguiente enlace veremos como puedes usar tu modelo entrenado.") 
- url = "https://xn3pg24ztuv6fdiqon8qn3.streamlit.app/"
- st.write(f"YOLO: [Enlace]({url})")
+ st.subheader("Optimización y Descenso de Gradiente")
+ st.image("descenso_gradiente.webp", width=200)
+ st.write(
+    "Aplicación matemática orientada a Machine Learning que demuestra cómo las derivadas y el gradiente "
+    "transforman problemas de optimización. Visualiza el ajuste iterativo de parámetros en regresiones "
+    "para minimizar el margen de error."
+ )
+ url = "https://detectoranomalias-my9xdojez9nixnmcayj7r5.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
 
 with col2: 
  st.subheader("Conversión de voz a texto")
