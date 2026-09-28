@@ -16,12 +16,14 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
  
- st.subheader("Conversión de texto a voz")
- image = Image.open('txt_to_audio2.png')
- st.image(image, width=190)
- st.write("En la siguiente enlace usaremos una de las aplicaciones de Inteligencia Artificial") 
- url = "https://imultimod.streamlit.app/"
- st.write(f"Texto a voz: [Enlace]({url})")
+ st.subheader("Clasificación y Análisis de Frutas")
+ st.image("frutas_app.png", width=200)  # Recuerda guardar tu imagen con este nombre
+ st.write(
+    "Aplicación interactiva para evaluar y comparar frutas según sus atributos (peso, diámetro y dulzor). "
+    "Permite ingresar nuevos especímenes y calcular métricas de distancia para determinar su similitud con otras frutas."
+ )
+ url = "https://frutasappclase.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
 
  st.subheader("Reconocimiento de Objetos")
  image = Image.open('txt_to_audio.png')
