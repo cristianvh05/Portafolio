@@ -45,6 +45,17 @@ with col1:
  url = "https://detectoranomalias-my9xdojez9nixnmcayj7r5.streamlit.app/"
  st.write(f"Acceder a la app: [Enlace]({url})")
 
+ st.subheader("Preparación y Estructura de Datos")
+ st.image("preparacion_datos.jpg", width=200)
+ st.write(
+    "Plataforma interactiva para la refinería y estructuración de datos de sensores IoT. "
+    "Permite experimentar en tiempo real con la tipificación de datos, tratamiento de imperfecciones "
+    "(missing values y outliers), escalado geométrico, división metodológica (Train/Val/Test) "
+    "y análisis estadístico descriptivo."
+ )
+ url = "https://clase5-2yjvfvzxurjhutb8ovkvoh.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
+
 with col2: 
  st.subheader("Conversión de voz a texto")
  image = Image.open('OIG8.jpg')
