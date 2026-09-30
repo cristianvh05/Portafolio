@@ -57,46 +57,74 @@ with col1:
  st.write(f"Acceder a la app: [Enlace]({url})")
 
 with col2: 
- st.subheader("Conversión de voz a texto")
- image = Image.open('OIG8.jpg')
- st.image(image, width=200)
- st.write("En la siguiente veremos una aplicación que usa la conversión de voz a texto.") 
- url = "https://traductorw.streamlit.app/"
- st.write(f"Voz a texto: [Enlace]({url})")
+ st.subheader("Monitoreo Ambiental y Calidad de Datos")
+ st.image("cornare_ambiental.webp", width=200)
+ st.write(
+    "Aplicación basada en la metodología CRISP-DM para el procesamiento de datos ambientales "
+    "en tiempo real mediante la API de Cornare (MARCO). Permite explorar, limpiar y transformar registros "
+    "meteorológicos, además de evaluar la fiabilidad de las estaciones mediante un Índice de Calidad de Datos (ICD)."
+ )
+ url = "https://cornarenivel-mve23atux8d3sjnrwwb8rg.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
 
- st.subheader("Análisis de Datos")
- image = Image.open('data_analisis.png')
- st.image(image, width=190)
- st.write("En la siguiente enlace veremos como se pueden analizar datos usando agentes.") 
- url = "https://dataagente.streamlit.app/"
- st.write(f"Datos: [Enlace]({url})")
+ st.subheader("Modelos de Regresión")
+ st.image("regresion_modelos.png", width=200)
+ st.write(
+    "Herramienta de aprendizaje supervisado con regresión lineal simple y múltiple. Examina la función "
+    "de costo y evalúa la precisión del modelo mediante métricas R², MAE y RMSE."
+ )
+ st.write("[Acceder a la app](https://regresion-ejvcypy27nacxbrbrdce9z.streamlit.app/)")
 
- st.subheader("Trasnscriptor Audio y Video")
- image = Image.open('OIG3.jpg')
- st.image(image, width=200)
- st.write("En la siguiente enlace veremos como realizamos transcripciones de audio/video.") 
- url = "https://transcript-whisper.streamlit.app/"
- st.write(f"Transcriptor: [Enlace]({url})")
+ st.subheader("Pronóstico y Análisis de Series de Tiempo")
+ st.image("series_tiempo.webp", width=200)
+ st.write(
+    "Aplicación enfocada en la inteligencia predictiva mediante el análisis de series de tiempo. "
+    "Descompone la información en tendencia, estacionalidad y ruido, e implementa modelos "
+    "estadísticos como ARIMA y Suavizado Exponencial para anticipar lecturas de sensores IoT."
+ )
+ url = "https://seriestiempo-o9ybzx22blbnb6bzrgcqfp.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
 
+ st.subheader("Pronóstico de Calidad del Aire (PM2.5 y PM10)")
+ st.image("calidad_aire.jpg", width=200)
+ st.write(
+    "Aplicación orientada a predecir la presencia de contaminantes (PM2.5 y PM10) mediante "
+    "series de tiempo (ARIMA, SARIMA, Holt-Winters) y técnicas de ventanas deslizantes. "
+    "Permite analizar tendencias y estacionalidades históricas para la gestión ambiental."
+ )
+ url = "https://pronosticocornare-pcgfjjubr7gjyviksekbsf.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
 
 with col3: 
- st.subheader("Generación en Contexto")
- image = Image.open('Chat_pdf.png')
- st.image(image, width=190)
- st.write("En la siguiente veremos una aplicación que usa RAG a partir de un documento (PDF).") 
- url = "https://chatpdf-cc.streamlit.app/"
- st.write(f"RAG: [Enlace]({url})")
+ st.subheader("Captura de Datos IoT y Predicción Térmica")
+ st.image("prediccion_termica_iot.webp", width=200)
+ st.write(
+    "Aplicación que integra un flujo completo de ciencia de datos e IoT[cite: 2]. "
+    "Permite la captura de telemetría propia (temperatura y humedad) mediante InfluxDB[cite: 2], "
+    "procesamiento de series temporales con Pandas y entrenamiento de modelos de regresión "
+    "para estimar la sensación térmica en tiempo real[cite: 2]."
+ )
+ url = "https://predicciontermica-agtwmkztyy6rfotnrggxt3.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
 
- st.subheader("Análisis de Imagen")
- image = Image.open('OIG4.jpg')
- st.image(image, width=200)
- st.write("En la siguiente enlace veremos la capacidad de análisis en Imágenes.") 
- url = "https://vision2-gpt4o.streamlit.app/"
- st.write(f"Vision: [Enlace]({url})")
+ st.subheader("De la Regresión Lineal a la Logística")
+ st.image("regresion_logistica.png", width=200)
+ st.write(
+    "Aplicación enfocada en la transición de la predicción numérica continua a la "
+    "clasificación categórica binaria[cite: 3]. Explora la combinación de un motor lineal "
+    "con el filtro sigmoide para transformar valores crudos en probabilidades[cite: 3], "
+    "el establecimiento de umbrales de decisión y la evaluación con matrices de confusión[cite: 3]."
+ )
+ url = "https://regresionlogistica-aacyhsnjdc8bbwgsndqx7n.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
  
- st.subheader("Sistema Ciberfísico")
- image = Image.open('OIG6.jpg')
- st.image(image, width=200)
- st.write("En la siguiente enlace veremos la capacidad de interacción con el mundo físico.") 
- url = "https://vision2-gpt4o.streamlit.app/"
- st.write(f"Vision: [Enlace]({url})")
+ st.subheader("Clasificación de Fertilidad de Suelos (KNN)")
+ st.image("knn_fertilidad_suelos.jpg", width=200)
+ st.write(
+    "Aplicación basada en el algoritmo de K-Vecinos Más Cercanos (KNN) para "
+    "estimar la fertilidad de suelos (baja, media o alta) a partir de análisis "
+    "químicos de AGROSAVIA. Permite analizar la influencia del valor de K, "
+    "el escalado de variables y la evaluación del desempeño del modelo."
+ )
+ url = "https://ffk9axmzdge2itmhzun2lc.streamlit.app/"
+ st.write(f"Acceder a la app: [Enlace]({url})")
